@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasal Imandiv</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans transition-colors duration-300" id="page">
+
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');"></div>
+  <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+
+  <!-- Top Navbar -->
+  <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between z-20 relative">
+    <!-- Left: Logo + Domain -->
+    <div class="flex items-center space-x-3">
+      <!-- Logo Image -->
+      <img src="C:\Users\Hasal Imandiv\.vscode\my_sample_website\images\mascot.png" alt="Logo" class="h-10 w-10 rounded-full" />
+      <!-- Domain or Site Name -->
+      <span class="text-xl font-semibold text-gray-800">Hasal.me</span>
+    </div>
+    
+    <!-- Right: Optional Navigation -->
+    <nav class="hidden sm:flex space-x-6">
+      <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+      <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Container -->
+  <div class="max-w-3xl mx-auto p-8 fade-in z-20 relative">
+
+    <!-- Header Section -->
+    <div class="flex justify-between items-center mb-8 text-white">
+      <h1 class="text-4xl font-bold">Hi, I'm Hasal Imandiv</h1>
+    </div>
+
+    <!-- About Section -->
+    <section class="mb-8 text-white" id="about">
+      <h2 class="text-2xl font-semibold mb-2">👋 About Me</h2>
+      <p>I’m a programmer who loves programming languages. I'm from Sri Lanka.</p>
+    </section>
+
+    <!-- Programming Skills Section -->
+    <section class="mb-8 text-white" id="skills">
+      <h2 class="text-2xl font-semibold mb-4">🧠 Programming Skills</h2>
+
+      <!-- Skill 1: HTML -->
+      <div class="mb-4 text-white">
+        <div class="flex justify-between mb-1">
+          <span>HTML</span>
+          <span>90%</span>
+        </div>
+        <div class="w-full bg-gray-1000 rounded-full h-4">
+          <div class="bg-yellow-400 h-4 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <!-- Skill 2: CSS -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span>CSS</span>
+          <span>80%</span>
+        </div>
+        <div class="w-full bg-gray-1000 rounded-full h-4">
+          <div class="bg-yellow-400 h-4 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <!-- Skill 3: JavaScript -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span>JavaScript</span>
+          <span>70%</span>
+        </div>
+        <div class="w-full bg-gray-1000 rounded-full h-4">
+          <div class="bg-yellow-400 h-4 rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <!-- Add more skills here -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span>Python</span>
+          <span>90%</span>
+        </div>
+        <div class="w-full bg-gray-1000 rounded-full h-4">
+          <div class="bg-yellow-400 h-4 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="mb-8 text-white" id="certifications">
+      <h2 class="text-2xl font-semibold mb-4">🎓 Certifications</h2>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <!-- Certificate 1 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="font-bold text-lg">Python for Beginners</h3>
+          <p class="text-sm text-gray-600">Up coming</p>
+          <a href="https://link-to-cert1.com" target="_blank" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+        </div>
+    </section>
+
+  </div>
+     <!-- Contact Section -->
+     <section id="contact" class="py-16 px-4 bg-gray-900 text-white">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8">Get in Touch</h2>
+
+        <!-- Contact Info -->
+        <div class="mb-10 space-y-4 text-center">
+          <p><strong>Email:</strong> <a href="hasalimandiv@gmail.com" class="text-green-400 hover:underline">hasalimandiv@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/HasalB36" target="_blank" class="text-green-400 hover:underline">github.com/HasalB36</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="mailto:your@email.com" method="POST" enctype="text/plain" class="space-y-4">
+          <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-green-400">
+          <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-green-400"></textarea>
+          <button type="submit" class="bg-green-400 hover:bg-green-500 text-black font-semibold py-2 px-6 rounded-full shadow-md transition-all duration-200">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+
+
+  <!-- JavaScript for Theme Toggle -->
+  <script>
+    function toggleTheme() {
+      const body = document.getElementById('page');
+      const isDark = body.classList.contains('bg-gray-900');
+
+      if (isDark) {
+        body.classList.remove('bg-white', 'text-white');
+        body.classList.add('bg-white', 'text-white');
+      } else {
+        body.classList.remove('bg-white', 'text-white');
+        body.classList.add('bg-white', 'text-white');
+      }
+    }
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
